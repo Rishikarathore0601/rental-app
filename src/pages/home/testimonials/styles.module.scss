@@ -1,0 +1,57 @@
+// Testimonials.module.scss
+
+.testimonialsSection {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa; /* Light background for contrast */
+  text-align: center;
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  .testimonialsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .testimonialCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .reviewText {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 1.5rem;
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .customerInfo {
+      .customerName {
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      .rating {
+        font-size: 1.2rem;
+        color: #ff6f61; /* Color for star rating */
+      }
+    }
+  }
+}

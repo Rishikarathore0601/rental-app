@@ -1,0 +1,75 @@
+// Footer.module.scss
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+
+  .footerContent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin: 0.5rem 0;
+
+        a {
+          color: white;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ff6f61;
+          }
+        }
+      }
+    }
+
+    .socialMedia {
+      .icons {
+        display: flex;
+        gap: 1rem;
+
+        a {
+          img {
+            width: 30px; // Size of social media icons
+            height: 30px;
+            transition: transform 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+
+    .contactInfo {
+      p {
+        margin: 0.5rem 0;
+
+        a {
+          color: #ff6f61;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .footerBottom {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+  }
+}
