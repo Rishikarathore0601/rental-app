@@ -4,6 +4,8 @@ import Products from './products'
 import AboutUs from './aboutUs'
 import ContactUs from './Contact'
 import Login from './login'
+import MyCart from './myCart'
+import ListDevice from './listDevice'
 
 const routes = [
   {
@@ -33,6 +35,18 @@ const routes = [
   {
     path: '/login',
     Component: Login,
+    Super: Layouts.Home,
+    auth: false
+  },
+  {
+    path: '/myCart',
+    Component: MyCart,
+    Super: Layouts.Home,
+    auth: false
+  },
+  {
+    path: '/listDevice',
+    Component: ListDevice,
     Super: Layouts.Home,
     auth: false
   }

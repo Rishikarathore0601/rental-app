@@ -1,0 +1,96 @@
+.rentOutDevice {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f0f4f8 0%, #dfe7ec 100%);
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .sectionTitle {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .subheading {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+    line-height: 1.6;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+
+    .step {
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .icon {
+        font-size: 2.5rem;
+        color: #ff6f61;
+        margin-bottom: 15px;
+      }
+
+      .stepTitle {
+        font-size: 1.8rem;
+        color: #333;
+        margin-bottom: 12px;
+        font-weight: bold;
+      }
+
+      .stepDescription {
+        font-size: 1.05rem;
+        color: #555;
+        line-height: 1.8;
+      }
+    }
+  }
+
+  .cta {
+    margin-top: 60px;
+
+    .ctaButton {
+      padding: 15px 40px;
+      font-size: 1.4rem;
+      color: #fff;
+      background-color: #ff6f61;
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+
+      &:hover {
+        background-color: #e55a50;
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

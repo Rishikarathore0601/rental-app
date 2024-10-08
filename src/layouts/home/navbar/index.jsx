@@ -89,5 +89,9 @@ const navLinks = [
   {
     name: 'Login',
     path: '/login'
+  },
+  {
+    name: 'Cart',
+    path: '/myCart'
   }
 ]

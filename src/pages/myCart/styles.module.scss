@@ -1,0 +1,205 @@
+.myCart {
+  padding: 20px;
+  background-color: #f3f4f6; // Light background for contrast
+  border-radius: 10px; // Rounded corners
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50; // Darker color for the title
+    text-align: center; // Center align
+    text-transform: uppercase; // Uppercase for emphasis
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #34495e; // Slightly darker color
+    text-align: center; // Center align
+  }
+
+  .devicesForRent,
+  .devicesForPurchase {
+    margin-bottom: 30px;
+
+    h3 {
+      font-size: 1.8rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #3498db; // Underline for emphasis
+      padding-bottom: 5px; // Padding below the title
+    }
+
+    .deviceList {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      // New styles for device list
+      .deviceRow {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        background-color: #ffffff; // White background for clarity
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); // Enhanced shadow for depth
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s; // Smooth transition effects
+
+        &:hover {
+          transform: translateY(-5px); // Lift effect on hover
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); // Deepen shadow on hover
+          background-color: #f8f9fa; // Lighten background on hover
+        }
+
+        .deviceImage {
+          width: 120px; // Slightly larger image
+          height: auto;
+          margin-right: 20px;
+          border-radius: 8px; // Rounded image corners
+          border: 2px solid #3498db; // Border around the image for emphasis
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Shadow for depth
+        }
+
+        .deviceDetails {
+          flex-grow: 1;
+
+          h4 {
+            font-size: 1.4rem; // Increased font size for visibility
+            margin-bottom: 10px;
+            color: #2980b9; // Attractive color for device names
+            text-transform: capitalize; // Capitalize each word
+            font-weight: 600; // Bold for emphasis
+          }
+
+          p {
+            font-size: 1rem;
+            margin-bottom: 5px;
+            color: #7f8c8d; // Lighter gray for descriptions
+            line-height: 1.5; // Increased line height for readability
+          }
+        }
+
+        .actionButtons {
+          display: flex;
+          gap: 10px;
+
+          .removeBtn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            background-color: #e74c3c; // Red for remove
+            color: white;
+            transition: background 0.3s ease;
+
+            &:hover {
+              background-color: #c0392b; // Darker red on hover
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cartSummary {
+    background-color: #ffffff; // White background for summary
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    h4 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: #27ae60; // Green for total price
+    }
+
+    .cartActions {
+      display: flex;
+      gap: 20px;
+
+      .checkoutBtn,
+      .continueShoppingBtn {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        transition: background 0.3s ease;
+
+        &.checkoutBtn {
+          background-color: #4caf50; // Green for checkout
+          color: white;
+
+          &:hover {
+            background-color: #388e3c; // Darker green on hover
+          }
+        }
+
+        &.continueShoppingBtn {
+          background-color: #2196f3; // Blue for continue shopping
+          color: white;
+
+          &:hover {
+            background-color: #1976d2; // Darker blue on hover
+          }
+        }
+      }
+    }
+  }
+
+  .discountCode,
+  .shippingInfo {
+    margin-top: 30px;
+    background-color: #ecf0f1; // Light gray background
+    padding: 15px;
+    border-radius: 8px;
+
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #2980b9; // Color for section titles
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: 1px solid #bdc3c7; // Light border
+      border-radius: 5px;
+
+      &:focus {
+        border-color: #3498db; // Highlight border on focus
+        outline: none; // Remove outline
+      }
+    }
+
+    .applyBtn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50; // Green for apply
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background-color: #388e3c; // Darker green on hover
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: #7f8c8d; // Lighter gray for text
+    }
+  }
+}
